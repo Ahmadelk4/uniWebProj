@@ -1,6 +1,5 @@
 body {
   margin: 0;
-
   overflow-x: hidden;
 }
 .close-container {
@@ -18,15 +17,6 @@ body {
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
-}
-.nav-link:hover {
-  background-color: #ffb019;
-  color: black;
-  /* -webkit-transition: background-color 1000ms linear;
-  -moz-transition: background-color 1000ms linear;
-  -o-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear; */
-  transition: background-color, 1000ms linear;
 }
 
 .close-icon:hover {
@@ -75,3 +65,34 @@ body {
 .main {
   transition: transform 0.4s;
 }
+/* slide transition**************************************** */
+.link-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link {
+  position: relative;
+  transition: 1s;
+}
+
+.link-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 55px;
+  background-color: #ffb019;
+  transform: translate(-110%, 0) skew(-30deg);
+  transition: 1s;
+}
+
+.link-container:hover .nav-link {
+  color: #fff;
+}
+
+.link-container:hover::before {
+  transform: translate(-5%, 0) skew(-15deg);
+}
+/* end slide transition*****************************************/

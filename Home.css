@@ -25,11 +25,12 @@ body {
 
 .open-nav .nav {
   transform: translateX(0);
+  position: absolute;
 }
 
-.open-nav .main {
+/* .open-nav .main {
   transform: translateX(330px);
-}
+} */
 
 .nav {
   background-color: #0c2542;

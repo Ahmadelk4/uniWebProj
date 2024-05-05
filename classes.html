@@ -9,7 +9,7 @@
   </head>
   <body >
  
-    <div class="karim">
+    
 
       <nav class="nav">
         <div class="close-container">
@@ -64,23 +64,32 @@
           <ion-icon name="library-outline" size="large"></ion-icon>
         </a>
       </div>
-      <div class="link-container">
+        <div class="link-container">
         <a href="documents.html" class="nav-link">
           documents
           <ion-icon name="document-text-outline" size="large"></ion-icon>
         </a>
-      </div>
+        </div>
       </div>
       </nav>
 
+<!-- table part ****************************************** -->
+
        <main class="main">
         <button onclick="menuOutline()" class="menu-button" > <ion-icon name="reorder-four-outline" size="large"></ion-icon></button>
-   
-     
-        <div class="container">
-      
-        <table class="rwd-table">
+  
+      <div class="container">
+
+        <div class="table-container">
+          <table class="rwd-table">
+
+          <div class="head">
+            <select  id="semesters"> </select>
+           <p>Classes</p>   
+          </div>
+
           <tbody>
+
             <tr>
               <th>Code</th>
               <th>Title</th>
@@ -239,10 +248,12 @@
             </tr>
           </tbody>
         </table>
-      
       </div>
 
     </div>
+ 
+      </main>
+
     <script type = "module";
     src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";></script>
     <script nomodule;

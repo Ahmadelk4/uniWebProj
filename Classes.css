@@ -122,10 +122,15 @@ body {
 /* transition section ************************************************************************ */
 
 /* table section ***************************************************************************** */
+
 .container {
   display: flex;
   justify-content: center;
   max-width: 100%;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
 }
 .rwd-table {
   color: #333;

@@ -8,7 +8,6 @@ body {
 }
 
 .nav-link {
-  /* position: relative; */
   color: white;
   text-decoration: none;
   font-size: 22px;
@@ -26,12 +25,11 @@ body {
 
 .open-nav .nav {
   transform: translateX(0);
-  position: absolute;
 }
 
-/* .open-nav .main {
+.open-nav .main {
   transform: translateX(330px);
-} */
+}
 
 .nav {
   background-color: #0c2542;
@@ -61,7 +59,6 @@ body {
   cursor: pointer;
   padding: 15px 25px;
   position: fixed;
-  z-index: -1;
 }
 .close-icon {
   color: black;
@@ -88,9 +85,9 @@ body {
 
 .link-container::before {
   content: "";
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 130%;
   height: 55px;
   background-color: #ffb019;
@@ -105,4 +102,3 @@ body {
 .link-container:hover::before {
   transform: translate(-5%, 0) skew(-15deg);
 }
-/* end slide transition*****************************************/

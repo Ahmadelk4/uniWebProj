@@ -191,13 +191,19 @@ td:before {
   td:before {
     display: none;
   }
+  p {
+    justify-content: center;
+  }
+
   th,
   td {
     display: table-cell;
     padding: 16px !important;
   }
+
   .rwd-table {
     box-shadow: rgb(0, 0, 0) 20px 50px 60px -20px;
+    width: 1000px;
   }
 }
 

@@ -3,8 +3,11 @@ body {
   overflow-x: hidden;
 }
 .close-container {
+  display: flex;
+  justify-content: space-between;
   background-color: #ffb019;
   border-bottom: white 8px solid;
+  padding: 10px 0;
 }
 
 .nav-link {
@@ -27,20 +30,17 @@ body {
   transform: translateX(0);
 }
 
-.open-nav .main {
-  transform: translateX(330px);
-}
-
 .nav {
   background-color: #0c2542;
   width: 320px;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   transform: translateX(-320px);
   transition: transform 0.4s;
   border-right: 1px solid;
+  z-index: 1;
 }
 .nav-close {
   background: none;
@@ -63,14 +63,32 @@ body {
 .close-icon {
   color: black;
 }
-.main {
-  transition: transform 0.4s;
+.container {
+  display: flex;
+  padding-top: 50px;
 }
 .nav-Home {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
   color: black;
 }
 .nav-Home:hover {
   color: white;
+}
+@media screen and (max-width: 860px) {
+  .nav {
+    background-color: #0c2542;
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-320px);
+    transition: transform 0.4s;
+    border-right: 1px solid;
+    z-index: 1;
+  }
 }
 /* slide transition**************************************** */
 .link-container {

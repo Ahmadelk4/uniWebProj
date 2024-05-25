@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   overflow-x: hidden;
@@ -31,7 +35,7 @@ body {
 }
 
 .nav {
-  background-color: #0c2542;
+  background-color: #0f3c70;
   width: 320px;
   height: 100vh;
   position: fixed;
@@ -78,7 +82,7 @@ body {
 }
 @media screen and (max-width: 1020px) {
   .nav {
-    background-color: #0c2542;
+    background-color: #0f3c70;
     width: 320px;
     height: 100vh;
     position: fixed;
@@ -122,13 +126,39 @@ body {
 }
 
 /* end slide transition*****************************************/
+/* header************************************************************************************** */
+.header {
+  background-color: #0f3c70;
+  color: white;
+}
+.header-center {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.h-logo {
+  height: 130px;
+  width: auto;
+  margin-right: 20px;
+  z-index: 1;
+}
+/*end header************************************************************************************** */
+
 /*grid ********************************************************/
 body {
-  background-color: #0c2542;
+  /* background-color: #eedac3; */
+  background-image: url("https://i.sstatic.net/jGlzr.png");
 }
 .grid {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 25px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: 60px;
@@ -145,7 +175,14 @@ body {
   height: 350px;
   text-align: center;
 }
-
+.info {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: 1;
+  height: 27px;
+  width: 27 px;
+}
 .content {
   position: absolute;
   width: 100%;
@@ -155,7 +192,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.card:hover .content {
+.flipCard {
   transform: rotateY(180deg);
   transition: transform 0.5s;
 }
@@ -166,61 +203,126 @@ body {
   height: 100%;
   width: 100%;
   background-color: #ffb019;
-  color: #03446a;
+  color: #061720;
   backface-visibility: hidden;
   border-radius: 5px 20px 20px 5px;
 }
 
 .back {
-  background: #03446a;
-  color: white;
-  border-radius: 20px 5px 5px 20px;
+  background: #8f1402;
+  color: gold;
+
   transform: rotateY(180deg);
 }
 .front {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url("0-Tools\Screenshot 2024-05-17 020644.png");
+  justify-content: center;
+  align-items: center;
+  background-color: #8f1402;
 }
-.header {
-  border: 2px black solid;
-  margin: 20px 5px 5px 5px;
-  border-radius: 5%;
-  height: 40px;
+.book- header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px gold solid;
+  border-radius: 5px 20px 20px 5px;
+  width: 92%;
+  height: 92%;
+  background-color: #8f1402;
 }
 .center {
-  margin: 20px 5px 5px 5px;
-  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px gold solid;
+  border-radius: 5px 20px 20px 5px;
+  width: 92%;
+  height: 92%;
+  background-color: #8f1402;
+  color: gold;
+}
+.title {
+  font-size: 25px;
 }
 .footer {
-  border: 2px black solid;
-  margin: 20px 5px 5px 5px;
-  border-radius: 5%;
-  height: 70px;
-  margin-bottom: 20px;
+  font-size: 12px;
 }
-
+.back p {
+  font-size: 12px;
+  margin-top: 35%;
+  padding: 0 10px;
+}
 @media screen and (max-width: 1020px) {
   .grid {
     display: flex;
     flex-direction: column;
   }
   body {
-    background-color: #0c2542;
+    background-color: #0f3c70;
+  }
+  centering {
+    display: flex;
+    justify-content: center;
   }
 
-  /* Styling */
-  .book {
+  .card {
+    position: relative;
+    perspective: 500px;
     width: 250px;
     height: 350px;
-    background-color: #ffb019;
-    border-radius: 13px;
     text-align: center;
   }
 
-  .centering {
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .flipCard {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffb019;
+    color: #03446a;
+    backface-visibility: hidden;
+    border-radius: 5px 20px 20px 5px;
+  }
+
+  .back {
+    background: #8f1402;
+    color: white;
+    border-radius: 10px 5px 5px 10px;
+    transform: rotateY(180deg);
+  }
+  .front {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #8f1402;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px gold solid;
+    width: 92%;
+    height: 92%;
+    background-color: #8f1402;
+  }
+  .center {
+    border: 1px gold solid;
+    width: 90%;
+    height: 90%;
+    background-color: #8f1402;
   }
 }

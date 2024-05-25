@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="Payments.css">
-    <script src="Payments.js"></script>
+    <script defer src="Payments.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIU</title>
   </head>
@@ -38,12 +38,7 @@
           <ion-icon name="id-card-outline" size="large"></ion-icon>
         </a>
       </div>
-      <div class="link-container">
-        <a href="transcript.html" class="nav-link">
-          transcript
-          <ion-icon name="document-text-outline" size="large"></ion-icon>
-        </a>
-      </div>
+
       <div class="link-container">
         <a href="PlanOfStudy.html" class="nav-link">
           plan of Study 
@@ -68,8 +63,15 @@
     <!-- table part ****************************************** -->
 
     <div class="main">
-      <button onclick="menuOutline()" class="menu-button" > <ion-icon name="reorder-four-outline" size="large"></ion-icon></button>
-
+<button onclick="menuOutline()" class="menu-button" > <ion-icon style="color: white;" name="reorder-four-outline" size="large"></ion-icon></button>
+      <div class="header">
+        <div></div>
+        <div class="header-center" >
+          <p>Lebanese Internationla University</p>
+        <p>الجامعة اللبنانية الدولية</p>
+        </div>
+        <img src="0-Tools\logo_LIU.png" class="h-logo" >
+      </div>
     <div class="container">
 
       <div class="table-container">
@@ -102,13 +104,13 @@
             <td data-th=" Course">
               BMIS310 Business Telecommunications
             </td>
-            <td data-th="Credits">
+            <td data-th="Credits" class="Credits">
               3
             </td>
-            <td data-th="Fee($)">
+            <td data-th="Fee($)"  class="Fee">
               645.00
             </td>
-            <td data-th="Net Fee($)">
+            <td data-th="Net Fee($)"  class="NetFee">
               387.00	
             </td>
             <td data-th="FA(%)	">
@@ -122,13 +124,13 @@
             <td data-th=" Course">
               CSCI380 Software Engineering
             </td>
-            <td data-th="Credits">
+            <td data-th="Credits" class="Credits">
               3
             </td>
-            <td data-th="Fee($)">
+            <td data-th="Fee($)"  class="Fee">
               645.00
             </td>
-            <td data-th="Net Fee($)">
+            <td data-th="Net Fee($)"  class="NetFee">
               387.00	
             </td>
             <td data-th="FA(%)	">
@@ -142,13 +144,13 @@
             <td data-th=" Course">
               CSCI475 Artificial Intelligence
             </td>
-            <td data-th="Credits">
+            <td data-th="Credits" class="Credits">
               3
             </td>
-            <td data-th="Fee($)">
+            <td data-th="Fee($)"  class="Fee">
               645.00
             </td>
-            <td data-th="Net Fee($)">
+            <td data-th="Net Fee($)"  class="NetFee">
               387.00	
             </td>
             <td data-th="FA(%)	">
@@ -163,13 +165,13 @@
             <td data-th=" Course">
               CSCI390 Web Programming
             </td>
-            <td data-th="Credits">
+            <td data-th="Credits" class="Credits">
               3
             </td>
-            <td data-th="Fee($)">
+            <td data-th="Fee($)"  class="Fee">
               645.00
             </td>
-            <td data-th="Net Fee($)">
+            <td data-th="Net Fee($)"  class="NetFee">
               387.00	
             </td>
             <td data-th="FA(%)	">
@@ -183,16 +185,16 @@
             <td data-th=" Course">
               CSCI443 Game Development
             </td>
-            <td data-th="Credits">
+            <td data-th="Credits" class="Credits">
               3
             </td>
-            <td data-th="Fee($)">
+            <td data-th="Fee($)"  class="Fee">
               645.00
             </td>
-            <td data-th="Net Fee($)">
+            <td data-th="Net Fee($)"  class="NetFee">
               387.00	
             </td>
-            <td data-th="FA(%)	">
+            <td data-th="FA(%)" id="fa">
               40.00	
             </td>
             <td data-th="Status">
@@ -203,19 +205,20 @@
             <td data-th=" Total">
               Total
             </td>
-            <td data-th="Credits">
+            <td data-th="TotalCredits" id="TotalCredits">
               
             </td>
-            <td data-th="Fee($)">
+            <td data-th="Fee($)"  id="totalFee">
               
             </td>
-            <td data-th="Net Fee($)">
+            <td data-th="Net Fee($)"  id="totalNetFee">
               
             </td>
-            <td data-th="FA(%)	">
+            <td data-th="FA(%)" id="FA">
             
             </td>
-            <td data-th="Status">
+            <td data-th="total calculate" >
+              <button onclick="tt()"  class="calButton"> calculate</button>
               
             </td>
           </tr>
@@ -237,6 +240,6 @@
     <script nomodule;
     src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js";>
     </script>
-
+  
   </body>
 </html>

@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Home.css">
-    <script src="Home.js"></script>
+    <link rel="stylesheet" href="Home.css" />
+    <script defer src="Home.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIU</title>
   </head>
-  <body >
-
+  <body>
+     <!--  navbar ******************************************************************************* -->
+    
     <nav class="nav">
       <div class="close-container">
        <a class="nav-Home" href="Home.html" >
@@ -38,12 +39,7 @@
            <ion-icon name="id-card-outline" size="large"></ion-icon>
          </a>
        </div>
-       <div class="link-container">
-         <a href="transcript.html" class="nav-link">
-           transcript
-           <ion-icon name="document-text-outline" size="large"></ion-icon>
-         </a>
-       </div>
+      
        <div class="link-container">
          <a href="PlanOfStudy.html" class="nav-link">
            plan of Study 
@@ -65,20 +61,68 @@
       
        </div>
      </nav>
-    <div class="main">
-     
-      <button onclick="menuOutline()" class="menu-button" > <ion-icon name="reorder-four-outline" size="large"></ion-icon></button>
+     <!-- end navbar ******************************************************************************* -->
+     <div class="main">
+      <button onclick="menuOutline()" class="menu-button" > <ion-icon style="color: white;" name="reorder-four-outline" size="large"></ion-icon></button>
+      <div class="header">
+        <div></div>
+        <div class="header-center" >
+          <p>Lebanese Internationla University</p>
+        <p>الجامعة اللبنانية الدولية</p>
+        </div>
+        <img src="0-Tools\logo_LIU.png" class="h-logo" >
+      </div>
+ 
+      
+      <!-- img slider *************************************************************** -->
+<div class="slider">
+  <img id="image" src="0-Tools\events.jpg" />
+</div>
+ <!-- end img slider *************************************************************** -->
+<div class="section"  >
+     <div class="count">
+          <div class="card-left">
+            <h4>garduation process</h4>
+            <div class="score">
+              <h1>94%</h1>
+              <span>of 100</span>
+            </div>
+            <div class="score-content">
+              <h2>finished credits</h2>
+             
+            </div>
+       
+        </div>
     </div>
-
-
-
+    <div>
+      <div class="phone-Info Info" >
+      <h3 class="t1 t-all">ALFA/TOUCH Student Plan</h3>
+      <p>Please fill out the below details for the student plan. You should receive an SMS during the first 2 weeks of the start of the month.
+      </p>
+      <div class="details" ><p  style="margin-right: 20px;">Operator:	</p><select ><option >touch</option> <option> ALFA</option></select></div>
+      <div class="details" ><p  style="margin-right: 20px;">Mobile Number (8 digits):	</p> <input type="text"></div>
+      <div class="details" ><p  style="margin-right: 20px;">Date of Birth: </p> <p>2003-07-11</p></div>
+        <button  class="Bstyle" style="margin: 0 0 auto  auto ; width: 100px;" >save</button>
+    </div >
     
+    <div  class="moreInfo Info">
+      <h3 class="t2 t-all">Links</h3>
+      <button class="Bstyle">Change Address</button>
+      <button class="Bstyle">Map of Beirut Campus</button>
+      <button class="Bstyle">Find Your Class </button>
+      <button class="Bstyle">List of Available Advisor of Your Major</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+
 
     <script type = "module";
     src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";></script>
     <script nomodule;
     src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js";>
     </script>
-
   </body>
 </html>

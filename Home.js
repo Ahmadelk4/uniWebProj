@@ -1,6 +1,3 @@
-function menuOutline() {
-  document.body.classList.toggle("open-nav");
-}
 
 const imageSources = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbEyj-LFvNK1yBs9wcI2_l8uCWw_WsJDXMSOEkar6-wA&s",

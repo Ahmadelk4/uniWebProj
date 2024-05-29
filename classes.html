@@ -2,65 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Classes.css">
-    <script src="Classes.js"></script>
+    <link rel="stylesheet" href="./Classes.css">
+    <link rel="stylesheet" href="./common.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIU</title>
   </head>
   <body >
 
 
-    <nav class="nav">
-      <div class="close-container">
-       <a class="nav-Home" href="Home.html" >
-         <div class="home-icon"><ion-icon name="home-outline" size="large"></ion-icon></div>
-       </a>
-        <button class="nav-close" onclick="menuOutline()">
-         <div class="close-icon"><ion-icon name="close-outline" size="large"></ion-icon></div>
-       </button>
-     </div>
-       <div class="nav-links">
-         <div class="link-container">
-           <a href="classes.html" class="nav-link">
-             classes
-             <ion-icon name="book-outline" size="large"></ion-icon>
-           </ion-icon>
-         </a>
-       </div>
-       <div class="link-container">
-         <a href="payments.html" class="nav-link">
-           payments
-           <ion-icon name="card-outline"  size="large"></ion-icon>
-         </a>
-       </div>
-       <div class="link-container">
-         <a href="Registration.html" class="nav-link">
-           Registration 
-           <ion-icon name="id-card-outline" size="large"></ion-icon>
-         </a>
-       </div>
-  
-       <div class="link-container">
-         <a href="PlanOfStudy.html" class="nav-link">
-           plan of Study 
-           <ion-icon name="map-outline" size="large"></ion-icon>
-         </a>
-       </div>
-       <div class="link-container">
-         <a href="onlineServices.html" class="nav-link">
-           online services(*)
-           <ion-icon name="headset-outline" size="large"></ion-icon>
-         </a>
-       </div>
-       <div class="link-container">
-         <a href="OnlineE-libraries.html" class="nav-link">
-           Online E-libraries
-           <ion-icon name="library-outline" size="large"></ion-icon>
-         </a>
-       </div>
-      
-       </div>
-     </nav>
+       <nav class="nav">
+     <div class="close-container">
+      <a class="nav-Home" href="./index.html" >
+        <div class="home-icon"><ion-icon name="home-outline" size="large"></ion-icon></div>
+      </a>
+       <button class="nav-close" onclick="menuOutline()">
+        <div class="close-icon"><ion-icon name="close-outline" size="large"></ion-icon></div>
+      </button>
+    </div>
+      <div class="nav-links">
+        <div class="link-container">
+          <a href="./classes.html" class="nav-link">
+            classes
+            <ion-icon name="book-outline" size="large"></ion-icon>
+          </ion-icon>
+        </a>
+      </div>
+      <div class="link-container">
+        <a href="./payments.html" class="nav-link">
+          payments
+          <ion-icon name="card-outline"  size="large"></ion-icon>
+        </a>
+      </div>
+      <div class="link-container">
+        <a href="./Registration.html" class="nav-link">
+          Registration 
+          <ion-icon name="id-card-outline" size="large"></ion-icon>
+        </a>
+      </div>
+
+      <div class="link-container">
+        <a href="./PlanOfStudy.html" class="nav-link">
+          plan of Study 
+          <ion-icon name="map-outline" size="large"></ion-icon>
+        </a>
+      </div>
+      <div class="link-container">
+        <a href="./onlineServices.html" class="nav-link">
+          online services(*)
+          <ion-icon name="headset-outline" size="large"></ion-icon>
+        </a>
+      </div>
+      <div class="link-container">
+        <a href="./OnlineE-libraries.html" class="nav-link">
+          Online E-libraries
+          <ion-icon name="library-outline" size="large"></ion-icon>
+        </a>
+      </div>
+     
+      </div>
+    </nav>
      
 
 <!-- table part ****************************************** -->
@@ -70,11 +70,11 @@
   <div class="header">
     <div></div>
     <div class="header-center" >
-      <p>Lebanese Internationla University</p>
+      <p >Lebanese Internationla University</p>
     <p>الجامعة اللبنانية الدولية</p>
     </div>
-    <img src="0-Tools\logo_LIU.png" class="h-logo" >
-  </div>>  
+    <img src="./0-Tools/logo_LIU.png" class="h-logo" >
+  </div> 
          
       <div class="container">
 
@@ -82,15 +82,9 @@
           <table class="rwd-table">
 
           <div class="head">
-            <select  id="semesters"> 
-            <option value=" ">fall-2024</option>
-            <option value=" ">spring-2023</option>
-            <option value=" ">fall-2023</option>
-            <option value=" ">spring-2022</option>
-            <option value=" ">fall-2022</option>
-          </select>
+          
            <p>Classes</p> 
-           <div></div>  
+     
           </div>
 
           <tbody>
@@ -264,6 +258,10 @@
     <script nomodule;
     src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js";>
     </script>
+    
+    <script defer src="./common.js"></script>
+    
+
 
    
 </body>

@@ -1,6 +1,4 @@
-function menuOutline() {
-  document.body.classList.toggle("open-nav");
-}
+
 
 let credits = document.querySelectorAll(".Credits");
 let ttlcredites = 0;

@@ -1,6 +1,4 @@
-function menuOutline() {
-  document.body.classList.toggle("open-nav");
-}
+
 
 const info = document.querySelectorAll(".info");
 info.forEach((ele) => {

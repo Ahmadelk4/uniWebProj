@@ -7,6 +7,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+/* .main {
+  background-color: red;
+} */
 .close-container {
   display: flex;
   justify-content: space-between;
